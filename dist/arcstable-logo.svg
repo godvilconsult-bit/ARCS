@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="200" fill="#0d1b2f"/>
+
+  <!-- Outer ring glow -->
+  <circle cx="200" cy="200" r="178" stroke="url(#ringGlow)" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Three stacked arcs / liquidity waves — the "stable" motif -->
+  <!-- Bottom arc (widest) -->
+  <path d="M 80 230 Q 200 160 320 230" stroke="url(#arcGrad1)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Middle arc -->
+  <path d="M 100 200 Q 200 135 300 200" stroke="url(#arcGrad2)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <!-- Top arc (tightest) -->
+  <path d="M 120 170 Q 200 110 280 170" stroke="url(#arcGrad3)" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Center diamond — USDC stable store-of-value symbol -->
+  <g transform="translate(200,200)">
+    <!-- Outer diamond -->
+    <polygon points="0,-34 24,0 0,34 -24,0" fill="url(#diamondFill)" opacity="0.18"/>
+    <!-- Inner diamond fill -->
+    <polygon points="0,-22 15,0 0,22 -15,0" fill="url(#diamondFill)" opacity="0.55"/>
+    <!-- Core dot -->
+    <circle cx="0" cy="0" r="6" fill="url(#coreDot)"/>
+  </g>
+
+  <!-- Subtle grid dots — infrastructure feel -->
+  <g opacity="0.12">
+    <circle cx="136" cy="136" r="2.5" fill="#acc6e9"/>
+    <circle cx="200" cy="118" r="2.5" fill="#acc6e9"/>
+    <circle cx="264" cy="136" r="2.5" fill="#acc6e9"/>
+    <circle cx="118" cy="200" r="2.5" fill="#acc6e9"/>
+    <circle cx="282" cy="200" r="2.5" fill="#acc6e9"/>
+    <circle cx="136" cy="264" r="2.5" fill="#acc6e9"/>
+    <circle cx="200" cy="282" r="2.5" fill="#acc6e9"/>
+    <circle cx="264" cy="264" r="2.5" fill="#acc6e9"/>
+  </g>
+
+  <!-- veARCS lock symbol — small padlock bottom-right quadrant -->
+  <g transform="translate(248,248)" opacity="0.8">
+    <rect x="-11" y="-2" width="22" height="16" rx="4" fill="#acc6e9" opacity="0.2" stroke="#acc6e9" stroke-width="1.2"/>
+    <path d="M -6 -2 V -8 A 6 6 0 0 1 6 -8 V -2" stroke="#acc6e9" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="0" cy="6" r="2.5" fill="#acc6e9" opacity="0.9"/>
+  </g>
+
+  <!-- Defs -->
+  <defs>
+    <linearGradient id="ringGlow" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#acc6e9" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#5b8fd4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#acc6e9" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="arcGrad1" x1="80" y1="230" x2="320" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#acc6e9" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#7ab0de" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#acc6e9" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="arcGrad2" x1="100" y1="200" x2="300" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#acc6e9" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#5b8fd4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#acc6e9" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="arcGrad3" x1="120" y1="170" x2="280" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#cbdbf2" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#cbdbf2" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="diamondFill" x1="-24" y1="-34" x2="24" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#cbdbf2"/>
+      <stop offset="100%" stop-color="#5b8fd4"/>
+    </linearGradient>
+    <radialGradient id="coreDot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#acc6e9"/>
+    </radialGradient>
+  </defs>
+</svg>

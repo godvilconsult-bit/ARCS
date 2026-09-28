@@ -84,11 +84,9 @@ export function LiquidityPanel() {
   }, [isApprove1Done, doAddLiq]);
 
   useEffect(() => {
-    if (isTxSuccess) {
-      toast.success('Liquidity added successfully!');
-      void refetchLp();
-      setAmount0(''); setAmount1('');
-    }
+    if (!isTxSuccess) return;
+    toast.success('Liquidity added successfully!');
+    void refetchLp();
   }, [isTxSuccess, refetchLp]);
 
   function handleAddLiquidity() {
