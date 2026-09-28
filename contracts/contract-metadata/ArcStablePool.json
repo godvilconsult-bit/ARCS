@@ -1,0 +1,598 @@
+{
+  "contractAddress": "0xc2c8f8ba96f9d02fac1f91b25b61e888f227a943",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/ArcStablePool.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/ArcStable.sol/ArcStablePool.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0xc2c8f8ba96f9d02fac1f91b25b61e888f227a943"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0xc2c8f8ba96f9d02fac1f91b25b61e888f227a943",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xc2c8f8ba96f9d02fac1f91b25b61e888f227a943",
+      "txHash": "0x6d0b2693dabbb873e6448fc41e51437747a0447861c6b07b301b8504d9c60c62",
+      "deployedAt": "2026-09-28T03:13:12.956Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "_token0",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_token1",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_ampCoeff",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "_swapFeeBps",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "_feeRecipient",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_owner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "addLiquidity",
+      "inputs": [
+        {
+          "name": "amount0",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "amount1",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "minLpOut",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "lpMinted",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "amplificationCoeff",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "feeRecipient",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "gaugeController",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getReserves",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getSwapOutput",
+      "inputs": [
+        {
+          "name": "tokenIn",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "amountIn",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "amountOut",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "lpBalance",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "owner",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "removeLiquidity",
+      "inputs": [
+        {
+          "name": "lpAmount",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "minAmount0",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "minAmount1",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "amount0",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "amount1",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "renounceOwnership",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "reserve0",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "reserve1",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "setGaugeController",
+      "inputs": [
+        {
+          "name": "_gaugeController",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "swap",
+      "inputs": [
+        {
+          "name": "tokenIn",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "amountIn",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "minOut",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "amountOut",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "swapFeeBps",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "token0",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "token1",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "totalLpSupply",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "transferOwnership",
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "event",
+      "name": "FeesCollected",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "recipient",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "GaugeControllerSet",
+      "inputs": [
+        {
+          "name": "gaugeController",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "LiquidityAdded",
+      "inputs": [
+        {
+          "name": "provider",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount0",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "amount1",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "lpMinted",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "LiquidityRemoved",
+      "inputs": [
+        {
+          "name": "provider",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "lpBurned",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "amount0",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "amount1",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OwnershipTransferred",
+      "inputs": [
+        {
+          "name": "previousOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "newOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Swap",
+      "inputs": [
+        {
+          "name": "trader",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "tokenIn",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "tokenOut",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amountIn",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "amountOut",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "feeAmount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "InvalidAddress",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidAmount",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidToken",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "OwnableInvalidOwner",
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "OwnableUnauthorizedAccount",
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "PoolNotInitialized",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ReentrancyGuardReentrantCall",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SafeERC20FailedOperation",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "SlippageExceeded",
+      "inputs": []
+    }
+  ]
+}

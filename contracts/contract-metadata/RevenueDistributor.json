@@ -1,0 +1,458 @@
+{
+  "contractAddress": "0xcd92724ab63db3d248cb50342251e4a37233ec09",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/RevenueDistributor.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/ArcStableExtensions.sol/RevenueDistributor.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0xcd92724ab63db3d248cb50342251e4a37233ec09"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0xcd92724ab63db3d248cb50342251e4a37233ec09",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xcd92724ab63db3d248cb50342251e4a37233ec09",
+      "txHash": "0xf5aa07562149be22968d41e6f258d77fbce53d558fe48ec7d698549eb0471292",
+      "deployedAt": "2026-09-28T03:33:06.237Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "_usdc",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_veToken",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_owner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "WEEK",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "checkpointUser",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "claim",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "totalYield",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "claimable",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "currentEpoch",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "depositRevenue",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "epochRevenue",
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "epochTotalVe",
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "epochUserVe",
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "lastClaimedEpoch",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "owner",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "renounceOwnership",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "startTime",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "totalClaimed",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "totalDistributed",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "transferOwnership",
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "usdc",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "veToken",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "event",
+      "name": "OwnershipTransferred",
+      "inputs": [
+        {
+          "name": "previousOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "newOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "RevenueDeposited",
+      "inputs": [
+        {
+          "name": "epoch",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "UserCheckpointed",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "epoch",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "veBalance",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "YieldClaimed",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "fromEpoch",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "toEpoch",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "InvalidAddress",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidAmount",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NothingToClaim",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "OwnableInvalidOwner",
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "OwnableUnauthorizedAccount",
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "ReentrancyGuardReentrantCall",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SafeERC20FailedOperation",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    }
+  ]
+}

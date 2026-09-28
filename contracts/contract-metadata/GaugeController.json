@@ -1,0 +1,511 @@
+{
+  "contractAddress": "0xa7fd6e9b1488c31b1707014ed0f4be9abb62d174",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/GaugeController.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/ArcStable.sol/GaugeController.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0xa7fd6e9b1488c31b1707014ed0f4be9abb62d174"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0xa7fd6e9b1488c31b1707014ed0f4be9abb62d174",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xa7fd6e9b1488c31b1707014ed0f4be9abb62d174",
+      "txHash": "0x3fe48631e034981bb092f401033d4c1c96b368e757fbe57535ea72e1ac181392",
+      "deployedAt": "2026-09-28T03:13:23.825Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "_arcsToken",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_veARCS",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_pool",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_weeklyEmission",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "_owner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "arcsToken",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IERC20"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "claimRewards",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "gaugeWeight",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "lastUpdateTime",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "lpRewardDebt",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "notifyReward",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "onAfterLpChange",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "onBeforeLpChange",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "owner",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "pendingReward",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "pendingRewards",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "pool",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "renounceOwnership",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "rewardPerShare",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "rewardReserve",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "setWeeklyEmission",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "totalVoted",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "transferOwnership",
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "updateRewardPerShare",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "userVoteWeight",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "veARCS",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "vote",
+      "inputs": [
+        {
+          "name": "weight",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "weeklyEmission",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "event",
+      "name": "OwnershipTransferred",
+      "inputs": [
+        {
+          "name": "previousOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "newOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "RewardClaimed",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "RewardNotified",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "VoteCast",
+      "inputs": [
+        {
+          "name": "voter",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "weight",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "totalVoted",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "WeeklyEmissionSet",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "InvalidAddress",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidWeight",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "OwnableInvalidOwner",
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "OwnableUnauthorizedAccount",
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "ReentrancyGuardReentrantCall",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SafeERC20FailedOperation",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "Unauthorized",
+      "inputs": []
+    }
+  ]
+}
